@@ -1,0 +1,38 @@
+{
+    "env": {
+        "browser": true,
+        "node": false,
+        "es6": true,
+        "jest": false
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "globalReturn": true,
+            "impliedStrict": true,
+            "jsx": true
+        }
+    },
+    "plugins": ["prettier", "jest", "react"],
+    "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "semi": ["error", "always"],
+        "no-console": ["off"],
+        "strict": ["error", "global"]
+    },
+    "overrides": [
+        {
+            "files": ["**/*.test.js"],
+            "env": {
+                "jest": true
+            },
+            "rules": {
+                "node/no-unpublished-require": ["off"]
+            }
+        }
+    ]
+}
