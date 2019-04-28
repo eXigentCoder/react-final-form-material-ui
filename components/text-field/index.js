@@ -9,9 +9,7 @@ export function TextField({ id, name, type = 'text' }) {
     id = getComponentId({ id, name });
     return (
         <FormControl component="fieldset">
-            <Field name={name}>
-                <MuiTextField id={id} name={name} type={type} />
-            </Field>
+            <Field name={name} render={() => <MuiTextField id={id} name={name} type={type} />} />
         </FormControl>
     );
 }

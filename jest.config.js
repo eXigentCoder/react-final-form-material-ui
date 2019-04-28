@@ -4,7 +4,8 @@ module.exports = {
     transform: {
         '^.+\\.jsx?$': 'babel-jest',
     },
-    testRegex: '.*.test.js',
+    testRegex: './components/.*.test.js',
+    testPathIgnorePatterns: ['<rootDir>/dist'],
     testEnvironment: 'jsdom',
     coverageThreshold: {
         global: {

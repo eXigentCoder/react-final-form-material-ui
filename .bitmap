@@ -41,6 +41,11 @@
     "utilities": {
         "files": [
             {
+                "relativePath": "components/text-field/text-field.test.js",
+                "test": true,
+                "name": "text-field.test.js"
+            },
+            {
                 "relativePath": "components/utilities/add-name-to-child.js",
                 "test": false,
                 "name": "add-name-to-child.js"
@@ -102,7 +107,24 @@
             }
         ],
         "mainFile": "components/utilities/index.js",
-        "trackDir": "components/utilities",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "components/text-field": {
+        "files": [
+            {
+                "relativePath": "components/text-field/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "components/text-field/text-field.test.js",
+                "test": true,
+                "name": "text-field.test.js"
+            }
+        ],
+        "mainFile": "components/text-field/index.js",
+        "trackDir": "components/text-field",
         "origin": "AUTHORED",
         "exported": false
     },
