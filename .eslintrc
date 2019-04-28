@@ -6,7 +6,7 @@
         "jest": false
     },
     "parserOptions": {
-        "ecmaVersion": 8,
+        "ecmaVersion": 9,
         "sourceType": "module",
         "ecmaFeatures": {
             "globalReturn": true,
@@ -22,7 +22,8 @@
         "quotes": ["error", "single", { "avoidEscape": true }],
         "semi": ["error", "always"],
         "no-console": ["off"],
-        "strict": ["error", "global"]
+        "strict": ["error", "global"],
+        "react/prop-types": ["off"]
     },
     "overrides": [
         {

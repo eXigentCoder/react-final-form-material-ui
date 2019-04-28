@@ -5,8 +5,8 @@ import { Form } from 'react-final-form';
 import 'jest-dom/extend-expect';
 
 describe('TextField', () => {
-    it('Should render successfully with just a name provided', () => {
-        const { getByText, container } = render(
+    it('Should render successfully with just a name provided, the display label should equal a capitalised version of the name', () => {
+        const { getByText } = render(
             <Form
                 onSubmit={() => null}
                 render={() => {
@@ -14,7 +14,6 @@ describe('TextField', () => {
                 }}
             />
         );
-        console.log({ html: container.innerHTML });
         getByText('Testing');
     });
 });
